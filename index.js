@@ -675,7 +675,7 @@ app.get('/gallery',function (req,res) {
 
 
 
-app.listen(4000,function(){
+app.listen(process.env.PORT || 5000,function(){
 	console.log("listening to port 3000");
 });
 
