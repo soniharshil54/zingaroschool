@@ -170,6 +170,7 @@ app.get('/parents/homework/:pid',function(req,res){
         if(err){
             console.log(err);
         }
+        
         else{
             let cid = parents.classid;
             Classes.findOne({classid:cid},function(err,classes){
