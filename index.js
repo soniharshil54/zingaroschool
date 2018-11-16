@@ -46,10 +46,27 @@ app.get('/parents/:pid/:pw',function(req,res){
     Parents.find({pid: idgot,password: pword}, function(err,parents){
         if(err){
             console.log(err);
+           
+        }
+
+        else if(Object.keys(parents).length === 0){
+            let loginnot = {
+                status:0,
+                msg: "data not found"
+                
+            };
+            res.send(loginnot);
+
         }
         else{
             console.log(parents);
-            res.send(parents);
+            let logins = {
+                status:1,
+                msg: "login successfully"
+                
+            };
+
+            res.send(logins);
         }
     })
 })
