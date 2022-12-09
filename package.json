@@ -14,7 +14,7 @@
   "author": "zingaro",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.16.4",
+    "express": "^4.17.3",
     "moment": "^2.22.2",
     "mongodb": "^3.1.8",
     "mongoose": "^5.3.2"
